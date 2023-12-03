@@ -1,0 +1,76 @@
+.todo-list {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem;
+
+    text-align: center;
+    border: 2px solid var(--bg-secondary);
+    padding: 2rem;
+    border-radius: 32px;
+    width: 500px;
+}
+
+.wrapper .list {
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    list-style: none;
+}
+
+.list button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.4s;
+    padding: 0 0.5rem;
+}
+
+.list-item:hover button {
+    opacity: 1;
+}
+
+.list .complete-todo img {
+    width: 1.75rem;
+    transition: 0.2s;
+    border-radius: 100%;
+}
+
+.list .complete-todo img:hover {
+    box-shadow: 0 0 10px var(--bg-secondary);
+}
+
+.list .remove-todo img {
+    width: 1rem;
+}
+
+.list .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s;
+    border-radius: 16px;
+    padding: 0.5rem 0;
+    margin: 1rem 0 ;
+}
+
+.list .list-item:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: 16px;
+    padding: 1rem 0;
+}
+
+.list-item li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 420px;
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+
